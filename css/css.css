@@ -1,0 +1,169 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.head{
+    margin: 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 7vw;
+    height: 5vw;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    /* color: aliceblue; */
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 1.8vw;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding: .3vw .5vw;
+}
+nav ul li a:hover{
+    background-color: black;
+    /* padding: .2vw .4vw; */
+    transition: .5s;
+    border-radius: 7px;
+    /* border: solid white 1px; */
+}
+.body0{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20vw;
+    margin-bottom: 2vw;
+}
+.body0 .left{
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:  1vw;
+}
+.body0 .left h2{
+    font-size: 3vw;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.body0 .left .text{
+    font-size: 2.2vw;
+    font-family: sans-serif;
+}
+.body0 .left button{
+
+    font-size: 1.3vw;
+    text-transform: capitalize;
+    border-radius: 20px;
+    padding: .8vw;
+    border-color: transparent;
+}
+.body0 .left button:hover{
+    transition: .4s;
+    transform: scale(1.1);
+}
+.body0 img{
+    width: 18vw;
+    height: 28vw;
+    position: absolute;
+    right: 12vw;
+    top: 12vw;
+}
+.body1 {
+    margin-top: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw; 
+}
+.body1 button{
+    background-color: transparent;
+    border-color: transparent;
+}
+.body1 img{
+    width: 4vw;
+    height: 5vw;
+    cursor: pointer;
+
+}
+.body1 img:hover{
+    transition: .4s;
+    transform: translateY(-10px);
+}
+
+
+@media  (max-width:780px){
+    .body0{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20vw;
+        margin-bottom: 2vw;
+    }
+    .logo img{
+       position: absolute;
+       width: 19vw;
+       height: 16vw;
+      
+    }
+    .body0 .left{
+        margin-top: 18vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .body0 .left h2{
+        font-size: 7vw;
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+    .body0 .left .text{
+        font-size: 4.2vw;
+        font-family: sans-serif;
+    }
+    .body0 .left button{
+    
+        font-size: 4.3vw;
+        text-transform: capitalize;
+        border-radius: 20px;
+        padding: 1.4vw;
+        border-color: transparent;
+    }
+    .body0 .left button:hover{
+        transition: .4s;
+
+        transform: scale(1.1);
+    }
+    .body0 img{
+        width: 47%;
+        height: 72vw;
+        position: absolute;
+        transform: translate(14vw, 72%);
+    }
+    .body1 img{
+        width: 11vw;
+        height: 14vw;
+        position: relative;
+        top: 60vw;
+    
+    }
+
+}
